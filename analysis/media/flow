@@ -1,0 +1,27 @@
+
+digraph G {
+  fontname="Trebuchet MS,Helvetica,Arial,sans-serif"
+  node [fontname="Trebuchet MS,Helvetica,Arial,sans-serif"]
+  edge [fontname="Trebuchet MS,Helvetica,Arial,sans-serif"]
+  splines=ortho
+  subgraph {
+    2 [shape=box, label="MHSC", width=3, style=filled, fillcolor="black", fontcolor="white"]
+    3 [shape=box label="Items", width=3, style=filled, fillcolor="firebrick3", fontcolor="white"]
+    4 [shape=box label="Aggregated Scores", width=3, style=filled, fillcolor="dodgerblue4", fontcolor="white"]
+    5 [shape=box, label="Missing Responses
+Guard", style=filled, fillcolor="firebrick3", fontcolor="white"]
+    6 [shape=box, label="Sentinel Responses
+Guard", style=filled, fillcolor="firebrick3", fontcolor="white"]
+    7 [shape=box, label="Rarity of Responsens
+Guard", style=filled, fillcolor="firebrick3", fontcolor="white"]
+    8 [shape=box, label="IForest Responses
+Guard", style=filled, fillcolor="firebrick3", fontcolor="white"]
+    9 [shape=box, label="IForest Scores
+Guard", style=filled, fillcolor="dodgerblue4", fontcolor="white"]
+    10 [shape=record label="{ Outlier |{Yes - No|Strength Score}}" ]
+    2 -> {3; 4;}
+    3 -> {5;6;7;8}
+    4 -> 9
+    {5;6;7;8;9;} -> 10;
+  }
+}
