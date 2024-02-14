@@ -18,7 +18,7 @@ Guard", style=filled, fillcolor="firebrick3", fontcolor="white"]
 Guard", style=filled, fillcolor="firebrick3", fontcolor="white"]
     9 [shape=box, label="IForest Scores
 Guard", style=filled, fillcolor="dodgerblue4", fontcolor="white"]
-    10 [shape=record label="{ Outlier Score |{Yes - No|Strength}}" ]
+    10 [shape=record label="{ {Outlier Score | 0-1}  |{Outlier Type | no outlier, moderate, strong, extreme}}" ]
     2 -> {3; 4;}
     3 -> {5;6;7;8}
     4 -> 9
