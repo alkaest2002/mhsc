@@ -5,19 +5,19 @@ digraph G {
   edge [fontname="Trebuchet MS,Helvetica,Arial,sans-serif"]
   splines=ortho
   subgraph {
-    2 [shape=box, label="MHSC", width=3, style=filled, fillcolor="black", fontcolor="white"]
-    3 [shape=box label="Items", width=3, style=filled, fillcolor="firebrick3", fontcolor="white"]
-    4 [shape=box label="Aggregated Scores", width=3, style=filled, fillcolor="dodgerblue4", fontcolor="white"]
-    5 [shape=box, label="Missing Responses
-Guard", style=filled, fillcolor="firebrick3", fontcolor="white"]
-    6 [shape=box, label="Sentinel Responses
-Guard", style=filled, fillcolor="firebrick3", fontcolor="white"]
-    7 [shape=box, label="Rarity of Responsens
-Guard", style=filled, fillcolor="firebrick3", fontcolor="white"]
-    8 [shape=box, label="IForest Responses
-Guard", style=filled, fillcolor="firebrick3", fontcolor="white"]
-    9 [shape=box, label="IForest Scores
-Guard", style=filled, fillcolor="dodgerblue4", fontcolor="white"]
+    2 [shape=box, label="MHSC", width=3, style=filled, fillcolor="#555555", fontcolor="white"]
+    3 [shape=box label="Items", width=3, style=filled, fillcolor="#570987", fontcolor="white"]
+    4 [shape=box label="Aggregated Scores", width=3, style=filled, fillcolor="#FDDA0D", fontcolor="#555555"]
+    5 [shape=box, label="Missing Items
+Guard", style=filled, fillcolor="#570987", fontcolor="white"]
+    6 [shape=box, label="Sentinel Items
+Guard", style=filled, fillcolor="#570987", fontcolor="white"]
+    7 [shape=box, label="Rarity of Responses
+Guard", style=filled, fillcolor="#570987", fontcolor="white"]
+    8 [shape=box, label="IForest Items
+Guard", style=filled, fillcolor="#570987", fontcolor="white"]
+    9 [shape=box, label="IForest Aggregated Scores
+Guard", style=filled, fillcolor="#FDDA0D", fontcolor="#555555"]
     10 [shape=record label="{ {Outlier Score | 0-1}  |{Outlier Type | no outlier, moderate, strong, extreme}}" ]
     2 -> {3; 4;}
     3 -> {5;6;7;8}
